@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Deteksi Hoaks Media Sosial</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Detektor Hoaks Cerdas Dengan Menggunakan Metode Logika Proposisi Pada
+        Media Sosial
+      </h1>
+
+      <label for="konten">Masukkan isi berita atau postingan:</label>
+      <textarea
+        id="konten"
+        placeholder="Contoh: Vaksin bisa mengandung chip pelacak..."
+        required
+      ></textarea>
+
+      <label>Sumber informasi:</label>
+      <select id="sumber">
+        <option value="resmi">Media Resmi / Terverifikasi</option>
+        <option value="netizen">Akun Netizen Tidak Dikenal</option>
+        <option value="grup">Pesan berantai / Grup WA</option>
+      </select>
+
+      <label>Ada bukti atau referensi valid?</label>
+      <select id="bukti">
+        <option value="ya">Ada</option>
+        <option value="tidak">Tidak Ada</option>
+      </select>
+
+      <label>Gaya Bahasa:</label>
+      <select id="bahasa">
+        <option value="netral">Netral / Informasi Objektif</option>
+        <option value="provokatif">Provokatif / Emosional</option>
+      </select>
+
+      <button onclick="deteksiHoaks()">🔍 Deteksi Sekarang</button>
+
+      <div class="result" id="hasil"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
